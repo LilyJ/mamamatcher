@@ -11,12 +11,15 @@ h2{
   font-size: 45px;
   padding: 15px;
   text-align: center;
-  background-color: #49281F;
-  color: #CFB590 !important;
-  text-shadow: 1px 1px 2px white;
+  background-color: #009989;
+  border-bottom: 5px solid #FC9D9A;
+  border-top: 5px solid #FC9D9A;
+  color: #EDB92E !important;
+  text-shadow: 1px 2px 2px white;
 }
 
 img{
   border-radius: 2em;
+  border: 4px solid #009989;
 }
 
