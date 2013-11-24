@@ -1,0 +1,22 @@
+body{
+  background-image: url("images/wood.png")
+}
+.container{
+  margin: 0 auto;
+  text-align: center;
+ }
+
+h2{
+  font-family: 'Life Savers', cursive;
+  font-size: 45px;
+  padding: 15px;
+  text-align: center;
+  background-color: #49281F;
+  color: #CFB590 !important;
+  text-shadow: 1px 1px 2px white;
+}
+
+img{
+  border-radius: 2em;
+}
+
