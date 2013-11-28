@@ -1,9 +1,11 @@
 <!doctype html>
-<html>
+<html ng-app="mamamatcher">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.2/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
 
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
     <script src="main.js"></script>
@@ -12,14 +14,14 @@
   </head>
   <body>
     <h2>Mama Matcher.</h2>
-    <div class="container">
-      <table class="table">
-        <td><img src="images/rabbits/rabbit-1.jpg"></td>
-        <td><img src="images/rabbits/rabbit-1.jpg"></td>
-        <td><img src="images/rabbits/rabbit-1.jpg"></td>
-        <td><img src="images/rabbits/rabbit-1.jpg"></td>
-        <td><img src="images/rabbits/rabbit-1.jpg"></td>
-      </table>
+    <div class="container" ng-controller="Matcher">
+      <span class="start-bn" ng-click="init()">Start</span>
+      <div class="row table">
+        <div class="card col-xs-6 col-sm-2" ng-repeat="card in cards">
+          <figure class="front"><img src="images/back.png"></figure>
+          <figure class="back"><img src="images/rabbits/rabbit-{{card.id}}.jpg"></figure>
+        </div>
+      </div>
     </div>
   </body>
 </html>
