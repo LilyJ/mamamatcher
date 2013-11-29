@@ -1,5 +1,9 @@
 var mamamatcher = angular.module("mamamatcher", []);
 
+mamamatcher.animation("animation", function(){
+  return removeClass: function(element, className, done){ }
+});
+
 mamamatcher.controller("MainCtrl", ['$scope', function($scope){
   $scope.showStart = true;
   // $scope.open = '';
@@ -20,8 +24,11 @@ mamamatcher.controller("MainCtrl", ['$scope', function($scope){
   };
 
   $scope.select = function(id){
+    var test = 1;
     console.log(id);
-    $scope.open = '.flipped';
+    if( id === test){
+      $animate.....
+    }
   }
 
 }]);

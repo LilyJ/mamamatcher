@@ -3,6 +3,7 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.2/angular.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/X.Y.Z/angular-animate.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.2/js/bootstrap.min.js"></script>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
@@ -17,7 +18,7 @@
     <div class="container" ng-controller="MainCtrl">
       <span class="start-bn" ng-click="init()" ng-show="showStart">Start</span>
       <div class="row table">
-        <div class="card col-xs-6 col-sm-2"  ng-class="{selected: true}" ng-repeat="card in cards" ng-click="select(card.id)">
+        <div class="card col-xs-6 col-sm-2" ng-class="open" ng-repeat="card in cards" ng-click="select(card.id); open='flipped'">
           <figure class="front"><img src="images/back.png"></figure>
           <figure class="back"><img src="images/rabbits/rabbit-{{card.id}}.jpg"></figure>
         </div>
@@ -26,4 +27,5 @@
   </body>
 </html>
 
-<!-- <div class="card col-xs-6 col-sm-2" ng-class="open" ng-repeat="card in cards" ng-click="select(card.id); open='flipped'"> -->
+<!-- <div class="card col-xs-6 col-sm-2"  ng-class="{selected: true}" ng-repeat="card in cards" ng-click="select(card.id)"> -->
+
