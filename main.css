@@ -48,17 +48,20 @@ h2{
 
 .card figure{
   -webkit-backface-visibility: hidden;
+
 }
 
 .card .back{
    -webkit-transform: rotateY(180deg);
-   display: none;
+   position: absolute;
+   margin-top: -120px;
+   // margin-right: -100px;
 }
 
-// figure.flipped {
-//   -webkit-transform: rotateY(180deg);
-//   display: visible;
-// }
+.card.flipped {
+  -webkit-transform: rotateY(180deg);
+  -webkit-backface-visibility: visible;
+}
 
 img{
   border-radius: 2em;
